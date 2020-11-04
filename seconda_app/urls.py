@@ -1,10 +1,10 @@
-  
+
 from django.urls import path
-from .views import esempio_if,esempio_ifelse, esempio_elif, esempio_for
+from .views import es_if,es_ifelse, es_elif, esfor
 app_name = 'seconda_app'
 urlpatterns = [
-    path('if', esempio_if, name='if'),
-    path('ifelse', esempio_ifelse, name='ifelse'),
-    path('ifelif', esempio_elif, name='elif'),
-    path('for', esempio_for, name='for'),
+    path('if', es_if, name='if'),
+    path('ifelse', es_ifelse, name='ifelse'),
+    path('ifelif', es_elif, name='elif'),
+    path('for', esfor, name='for'),
 ]

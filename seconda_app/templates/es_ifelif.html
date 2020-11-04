@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>if else</title>
-</head>
-<body>
-<b>var1 = {{ var1 }}</b> <br/>
+{% extends 'base.html'%}
+{%block title%}
+	{{block.super}} | Index
+{%endblock title%}
+
+{%block content%}
+ <title>if else</title>
+    <b>var1 = {{ var1 }}</b> <br/>
 	<b>var2 = {{ var2 }}</b> <br/>
 	<b>var3 = {{ var3 }}</b> <br/>
 
@@ -99,5 +99,5 @@
 	{% else %}
 		 <i>zero is not equal to 0</i></b>
 	{% endif %}
-</body>
-</html>
+{%endblock content%}
+

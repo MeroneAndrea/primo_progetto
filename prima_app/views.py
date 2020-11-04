@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 #L1
 def homepage(request):
-    return HttpResponse("<h1>Ciao a tutti! Benvenuti nella homepage!</h1>")
+    return render(request, "homepage.html")
 
 #L2
 def menu(request):

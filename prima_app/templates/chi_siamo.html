@@ -1,11 +1,9 @@
-  
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>Chi siamo</title>
-</head>
-<body>
-<h3>Siamo quelli che siamo ?</h3>
-</body>
-</html>
+{% extends 'base.html'%}
+{%block title%}
+	{{block.super}} | Index
+{%endblock title%}
+
+{%block content%}
+<title>Chi siamo</title>
+    <h3>Siamo quelli che siamo ?</h3>
+{%endblock content%}
