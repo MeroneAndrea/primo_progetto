@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    {{ giornalista.cognome}}
+{%endblock title%}
+
+{% block content %}
+    <h1>{{ giornalista.cognome }}</h1>
+    <h3>{{ giornalista.nome }}</h3>
+{% endblock content %}
