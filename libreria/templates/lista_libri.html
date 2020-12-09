@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{ %block title% }
+    Lista Libri
+{ %endblock title% }
+
+{%block content%}
+    <h4>Articolo: </h4>
+    {% for articolo in articoli %}
+        <p><strong>Titolo:</strong><a href="/libreria/libri/{{libro.id}}"> {{libro.titolo}}</a></p>
+        <p><strong>Contenuto: </strong>{{libro.genere}}</p>
+        <p><strong>Autore:</strong>{{libro.autore}}</p>
+        <hr>
+    {% endfor %}
+
+{% endblock content %}
