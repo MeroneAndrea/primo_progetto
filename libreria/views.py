@@ -14,7 +14,7 @@ class AutoreDetailViewCB(DetailView):
 
 class LibroListView(ListView): 
     model=Libro_ma
-    template_name="lista_Libri.html"
+    template_name="lista_libri.html"
     
     def get_context_data(self, **kwargs):
         context=super().get_context_data(**kwargs)
