@@ -5,11 +5,12 @@
 { %endblock title% }
 
 {%block content%}
-    <h4>Articolo: </h4>
-    {% for articolo in articoli %}
-        <p><strong>Titolo:</strong><a href="/libreria/libri/{{libro.id}}"> {{libro.titolo}}</a></p>
-        <p><strong>Contenuto: </strong>{{libro.genere}}</p>
-        <p><strong>Autore:</strong>{{libro.autore}}</p>
+    <h4>Libro: </h4>
+    {% for libro in libri %}
+        <p><strong>Titolo:</strong>{{libro.titolo}}</a></p>
+        <p><strong>Contenuto: </strong>{{libro.genere.all|join:" "}}</p>
+        <p><strong>Autore:</strong>{{libro.autore.nome}},{{libro.autore.cognome}}</p>
+        <p><strong>ISBN:</strong>{{libro.ISBN}}</p>
         <hr>
     {% endfor %}
 
