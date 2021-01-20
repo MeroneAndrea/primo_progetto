@@ -12,7 +12,6 @@
     <title>{% block title %} My project {% endblock title %}</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
     {% block navbar %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Menu</a>
@@ -33,6 +32,7 @@
           <a class="dropdown-item" href="{% url 'prima_app:variabili'%}">variabili</a>
         </div>
       </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Seconda app
@@ -44,6 +44,7 @@
           <a class="dropdown-item" href="{% url 'seconda_app:ifelse'%}">esercizio ifelse</a>
         </div>
       </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           News
@@ -53,6 +54,16 @@
           <a class="dropdown-item" href=http://127.0.0.1:8000/news/lista_giornalisti>lista giornalisti</a>
         </div>
       </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Libreria
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'libreria:lista_libri'%}">lista libri</a>
+        </div>
+      </li>
+
     </ul>
   </div>
 </nav>

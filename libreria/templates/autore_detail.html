@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    {{ autore_ma.cognome}}
+{%endblock title%}
+
+{% block content %}
+    <h1>{{ autore_ma.cognome }}</h1>
+    <h3>{{ autore_ma.nome }}</h3>
+    {% for libro in  autore_ma.libri.all %}
+        <h4><strong>Titolo: </strong>{{ libro.titolo }}</h4>
+        <h5><strong>Genere: </strong>{% for genere in libro.genere.all %}{{ genere }} {% endfor %}</h5>
+        <h5><strong>ISBN: </strong>{{ libro.ISBN }}</h5>
+        <hr>
+    {% endfor %}
+{% endblock content %}
