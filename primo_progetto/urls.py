@@ -25,3 +25,8 @@ urlpatterns = [
     path('libreria/', include('libreria.urls')),
     path('forms_app/', include('forms_app.urls')),
 ]
+
+#aggiungiamo a djbango l'authentication url: 
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls')),
+]
